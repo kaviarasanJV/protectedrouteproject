@@ -13,12 +13,11 @@ export default function App() {
   const [username, setUsername] = useState(""); // store username globally
   const handleLogout = () => {
     setIsAuthenticated(false);
-    setUsername(""); // clear username on logout
+    setUsername("");
   };
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Link to="/dashboard">Go to Dashboard</Link> */}
         <Routes>
           <Route
             exact
